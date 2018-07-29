@@ -3,11 +3,18 @@
   <head></head>
   <body>
 
-    <div id="app">Hello</div>
+    <div id="output">The output</div><br>
+    <button id="button">See all peeps</button>
 
-    <script type="text/javascript" src="peep-model.js"></script>
-    <script type="text/javascript" src="peep-all-model.js"></script>
-    <script type="text/javascript" src="peep-all-view.js"></script>
-    <script type="text/javascript" src="peep-all-controller.js"></script>
+    <script src="peep-model.js"></script>
+    <script src="peep-all-model.js"></script>
+    <script src="peep-all-view.js"></script>
+    <script src="controller.js"></script>
+
+    <script type="text/javascript">
+      var controller = new Controller()
+      controller.setEventListeners();
+    </script>
+
   </body>
 </html>
